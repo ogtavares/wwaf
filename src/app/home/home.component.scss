@@ -1,0 +1,95 @@
+.macro{
+  .logo{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 209px;
+    }
+  }
+  .simple-info{
+    justify-content: center;
+    display: grid;
+    .who-we-are{
+      width: 420px;
+      margin-top: 80px;
+      .icon{
+        display: flex;
+        justify-content: end;
+      }
+    }
+    .what-we-do{
+      width: 420px;
+      padding-left: 419px;
+      .icon{
+        display: flex;
+        justify-content: end;
+      }
+    }
+    .what-is{
+      width: 420px;
+      .icon{
+        display: flex;
+        justify-content: end;
+      }
+    }
+    .card {
+      background-color: dimgray;
+      .title{
+        color: #7ed957;
+      }
+      .text{
+        color: white;
+      }
+    }
+  }
+  .contact-us{
+    display: flex;
+    justify-content: end;
+    padding-right: 203px;
+    .box{
+      background-color: dimgray;
+      .header{
+        color: #7ed957;
+      }
+      .tel{
+        display: flex;
+        justify-content: space-evenly;
+        .numb{
+          color: white;
+        }
+      }
+      .insta{
+        display: flex;
+        gap: 18px;
+
+        .ic{
+          padding-left: 18px;
+        }
+        .nick{
+          color: white;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 828px){
+  .simple-info{
+    padding-right: 221px !important;
+  }
+  .who-we-are{
+    width: 196px !important;
+    padding-left: 228px !important;
+  }
+  .what-we-do{
+    width: 196px !important;
+  }
+  .what-is{
+    width: 196px !important;
+    padding-left: 230px !important;
+  }
+  .contact-us{
+    padding-right: 0px !important;
+  }
+}
